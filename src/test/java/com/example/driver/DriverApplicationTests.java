@@ -54,7 +54,7 @@ class DriverApplicationTests {
     }
 
 	@Test
-	public void canCreateANewHotel() throws Exception {
+	public void canAddANewDriver() throws Exception {
 		Driver driver = new Driver(1L, "abc", 021343, "abc22", "1313", LocalDateTime.now(), LocalDateTime.now(), 152.0, 1L, 150);
        when(driverrepo.save(driver)).thenReturn((driver));
 		mvc.perform(post("/drivers/add")
@@ -65,7 +65,7 @@ class DriverApplicationTests {
 	}
 
 	@Test
-	public void canGetAllHotels() throws Exception {
+	public void canGetAllDrivers() throws Exception {
 		Driver driver1 = new Driver(1L, "abc", 021343, "abc22", "1313", LocalDateTime.now(), LocalDateTime.now(), 152.0, 1L, 150);
 		Driver driver2 = new Driver(1L, "abc", 021343, "abc22", "1313", LocalDateTime.now(), LocalDateTime.now(), 152.0, 1L, 150);
 

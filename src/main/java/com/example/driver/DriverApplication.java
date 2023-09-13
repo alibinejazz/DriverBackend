@@ -8,6 +8,7 @@ public class DriverApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DriverApplication.class, args);
+		System.out.println("Chalrah hae chalrah hae");
 	}
 
 }

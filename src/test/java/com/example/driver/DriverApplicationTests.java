@@ -55,9 +55,9 @@ class DriverApplicationTests {
 
 	@Test
 	public void canAddANewDriver() throws Exception {
-		Driver driver = new Driver(1L, "abc", 021343, "abc22", "1313", LocalDateTime.now(), LocalDateTime.now(), 152.0, 1L, 150);
+		Driver driver = new Driver(1L, "abc", 021343, "abc22", "1313", LocalDateTime.now(), LocalDateTime.now(), 152.0, 1L);
        when(driverrepo.save(driver)).thenReturn((driver));
-		mvc.perform(post("/drivers/add")
+		mvc.perform(post("/dr ivers/add")
 				.contentType(MediaType.APPLICATION_JSON)
 				.content(jsonDriver.write(driver).getJson()))
 				.andExpect(status().isOk());
@@ -66,8 +66,8 @@ class DriverApplicationTests {
 
 	@Test
 	public void canGetAllDrivers() throws Exception {
-		Driver driver1 = new Driver(1L, "abc", 021343, "abc22", "1313", LocalDateTime.now(), LocalDateTime.now(), 152.0, 1L, 150);
-		Driver driver2 = new Driver(1L, "abc", 021343, "abc22", "1313", LocalDateTime.now(), LocalDateTime.now(), 152.0, 1L, 150);
+		Driver driver1 = new Driver(1L, "abc", 021343, "abc22", "1313", LocalDateTime.now(), LocalDateTime.now(), 152.0, 1L);
+		Driver driver2 = new Driver(1L, "abc", 021343, "abc22", "1313", LocalDateTime.now(), LocalDateTime.now(), 152.0, 1L);
 
        
 		List<Driver> driverList = new ArrayList<>();

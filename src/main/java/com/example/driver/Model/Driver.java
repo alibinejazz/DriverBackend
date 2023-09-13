@@ -32,5 +32,4 @@ public class Driver {
     private LocalDateTime returnDate;
     private Double totalPrice;
     private Long carId;
-    private Integer damageWavier;
 }

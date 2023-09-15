@@ -29,9 +29,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 class DriverApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
 
 	// 	private MockMvc mvc;
 	// @Mock

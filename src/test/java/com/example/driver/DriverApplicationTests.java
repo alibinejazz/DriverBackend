@@ -68,8 +68,6 @@ class DriverApplicationTests {
 	public void canGetAllDrivers() throws Exception {
 		Driver driver1 = new Driver(1L, "abc", 021343, "abc22", "1313", LocalDateTime.now(), LocalDateTime.now(), 152.0, 1L);
 		Driver driver2 = new Driver(1L, "abc", 021343, "abc22", "1313", LocalDateTime.now(), LocalDateTime.now(), 152.0, 1L);
-
-       
 		List<Driver> driverList = new ArrayList<>();
 		driverList.add(driver1);
 		driverList.add(driver2);

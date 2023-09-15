@@ -57,7 +57,7 @@ class DriverApplicationTests {
 	public void canAddANewDriver() throws Exception {
 		Driver driver = new Driver(1L, "abc", 021343, "abc22", "1313", LocalDateTime.now(), LocalDateTime.now(), 152.0, 1L);
        when(driverrepo.save(driver)).thenReturn((driver));
-		mvc.perform(post("/dr ivers/add")
+		mvc.perform(post("/drivers/add")
 				.contentType(MediaType.APPLICATION_JSON)
 				.content(jsonDriver.write(driver).getJson()))
 				.andExpect(status().isOk());
